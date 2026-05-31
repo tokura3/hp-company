@@ -154,31 +154,92 @@ footer {
 
 /* スマホ対応 */
 @media (max-width: 768px) {
-  .header {
-    margin: 12px;
-    display: block;
+  body {
+    overflow-x: hidden;
+    padding-top: 0; /* will be adjusted by JS when header is fixed */
   }
 
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1100px, calc(100% - 40px));
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 0 0 18px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 50;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* Hide nav by default on mobile; opened by JS toggle */
   nav {
-    margin-top: 16px;
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1100px, calc(100% - 40px));
+    padding: 12px 18px;
+    background: rgba(255,255,255,0.98);
+    border-radius: 0 0 18px 18px;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 45;
   }
 
   nav a {
-    display: inline-block;
-    margin: 6px 12px 6px 0;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .hero {
     margin: 16px 12px 0;
-    padding: 64px 28px;
+    padding: 56px 28px;
+    border-radius: 28px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 2px;
   }
 
   .hero h1 {
     font-size: 30px;
+    line-height: 1.45;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 2;
   }
 
   .section {
-    padding: 64px 20px;
+    padding: 56px 20px;
   }
 
   .cards {
