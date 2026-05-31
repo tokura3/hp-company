@@ -31,12 +31,21 @@ body {
   letter-spacing: 1px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   margin-left: 22px;
   color: #333;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 .hero {
