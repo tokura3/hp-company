@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MASARU DATA SOLUTIONS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>MASARU DATA SOLUTIONS - データ分析・BI・AI活用支援</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -13,63 +13,109 @@
     <div class="logo">MASARU DATA SOLUTIONS</div>
     <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="メニュー">☰</button>
     <nav id="nav">
-      <a href="#company">会社案内</a>
-      <a href="#service">サービス</a>
-      <a href="#results">成果実績</a>
-      <a href="#testimonials">お客様の声</a>
-      <a href="#blog">ブログ</a>
-      <a href="#contact">お問合せ</a>
+      <a href="./index.html">HOME</a>
+      <a href="./services/index.html">SERVICES</a>
+      <a href="./works/index.html">WORKS</a>
+      <a href="./profile/index.html">PROFILE</a>
+      <a href="./contact/index.html">CONTACT</a>
     </nav>
   </header>
 
+  <!-- ===== ファーストビュー ===== -->
   <section class="hero">
     <p class="sub-title">Data Analytics / BI / AI Support</p>
     <h1>データで、ビジネスの意思決定を支える。</h1>
     <p>
       SQL・Python・BIツールを活用し、データ分析、可視化、業務改善を支援します。
     </p>
+    <div class="hero-buttons">
+      <a href="./services/index.html" class="btn primary">サービスを見る</a>
+      <a href="./contact/index.html" class="btn secondary">相談する</a>
+    </div>
   </section>
 
-  <!-- ===== Hero Visual Section ===== -->
-  <section class="hero-visual">
-    <h2 class="hero-visual-title">データを、経営判断につなげる。</h2>
-    <p class="hero-visual-subtitle">散らばったデータを整理し、分析・可視化・自動化まで支援します。</p>
+  <!-- ===== 課題提起 ===== -->
+  <section class="section issues">
+    <h2>こんなお悩みありませんか？</h2>
+    <div class="issues-grid">
+      <div class="issue-card">
+        <h3>Excel集計が属人化している</h3>
+        <p>特定の担当者に頼らざるを得ない状況から脱却できていない</p>
+      </div>
+      <div class="issue-card">
+        <h3>レポート作成に時間がかかる</h3>
+        <p>毎月の手作業でのレポート作成に多くの時間が取られている</p>
+      </div>
+      <div class="issue-card">
+        <h3>データはあるが活用できていない</h3>
+        <p>データは存在するが、意思決定に活かされていない</p>
+      </div>
+      <div class="issue-card">
+        <h3>BIやAIを導入したいが進め方が分からない</h3>
+        <p>何から始めればよいのか、どのツールを選ぶべきか判断できない</p>
+      </div>
+    </div>
+  </section>
 
-    <div class="mermaid-flow">
+  <!-- ===== サービス概要 ===== -->
+  <section class="section services-overview">
+    <h2>サービス</h2>
+    <p class="section-subtitle">データ活用を段階別に支援します</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>データ分析</h3>
+        <p>散在するデータを整理し、ビジネス課題の分析・改善案の提案を行います。</p>
+        <a href="./services/analytics.html" class="card-link">詳しく見る →</a>
+      </div>
+      <div class="service-card">
+        <h3>BIダッシュボード構築</h3>
+        <p>Tableau・Looker Studioなどを使用し、可視化されたBIダッシュボードを構築します。</p>
+        <a href="./services/bi.html" class="card-link">詳しく見る →</a>
+      </div>
+      <div class="service-card">
+        <h3>データ基盤構築</h3>
+        <p>BigQuery・SnowflakeなどのクラウドDWHを活用し、スケーラブルなデータ基盤を構築します。</p>
+        <a href="./services/platform.html" class="card-link">詳しく見る →</a>
+      </div>
+      <div class="service-card">
+        <h3>業務自動化</h3>
+        <p>GAS・Python・SQLなどを活用し、手作業を自動化し業務効率を向上させます。</p>
+        <a href="./services/automation.html" class="card-link">詳しく見る →</a>
+      </div>
+      <div class="service-card">
+        <h3>AI活用支援</h3>
+        <p>機械学習モデルの構築・導入支援により、予測・分類などのAI活用をサポートします。</p>
+        <a href="./services/ai.html" class="card-link">詳しく見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== データ活用フロー ===== -->
+  <section class="section data-flow">
+    <h2>データ活用の流れ</h2>
+    <p class="section-subtitle">分析・自動化・配布までの支援範囲</p>
+
+    <div class="flow-container">
       <div class="flow-step step-source">
         <div class="step-header">
-          <span class="step-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <!-- ファイルアイコン -->
-              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-              <polyline points="13 2 13 9 20 9" />
-              <!-- フォルダアイコン（左下） -->
-              <path d="M5 16v2a2 2 0 0 0 2 2h8" opacity="0.4" />
-              <path d="M2 18H8" />
-            </svg>
-          </span>
-          <div class="step-title">課題：散在データ</div>
+          <div class="step-icon">📊</div>
+          <div class="step-title">入力</div>
         </div>
         <div class="step-points">
           <div class="step-point">Excel</div>
           <div class="step-point">CSV</div>
           <div class="step-point">基幹システム</div>
-          <div class="step-point">Web・GA4</div>
+          <div class="step-point">GA4</div>
+          <div class="step-point">広告データ</div>
         </div>
       </div>
 
-      <div class="flow-arrow"></div>
+      <div class="flow-arrow">→</div>
 
       <div class="flow-step step-process">
         <div class="step-header">
-          <span class="step-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <!-- 歯車アイコン -->
-              <circle cx="12" cy="12" r="3" />
-              <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" />
-            </svg>
-          </span>
-          <div class="step-title">整理・自動化</div>
+          <div class="step-icon">⚙️</div>
+          <div class="step-title">処理</div>
         </div>
         <div class="step-points">
           <div class="step-point">SQL</div>
@@ -78,19 +124,12 @@
         </div>
       </div>
 
-      <div class="flow-arrow"></div>
+      <div class="flow-arrow">→</div>
 
       <div class="flow-step step-platform">
         <div class="step-header">
-          <span class="step-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <!-- データベースアイコン -->
-              <ellipse cx="12" cy="5" rx="7" ry="3" />
-              <path d="M5 5v7c0 1.66 3.13 3 7 3s7-1.34 7-3V5" />
-              <path d="M5 12v7c0 1.66 3.13 3 7 3s7-1.34 7-3v-7" />
-            </svg>
-          </span>
-          <div class="step-title">統合：データ基盤</div>
+          <div class="step-icon">💾</div>
+          <div class="step-title">蓄積</div>
         </div>
         <div class="step-points">
           <div class="step-point">BigQuery</div>
@@ -99,21 +138,12 @@
         </div>
       </div>
 
-      <div class="flow-arrow"></div>
+      <div class="flow-arrow">→</div>
 
-      <div class="flow-step step-dashboard">
+      <div class="flow-step step-output">
         <div class="step-header">
-          <span class="step-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <!-- グラフアイコン -->
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <path d="M7 16v-4" />
-              <path d="M12 16v-7" />
-              <path d="M17 16v-2" />
-              <line x1="3" y1="16" x2="21" y2="16" />
-            </svg>
-          </span>
-          <div class="step-title">見える化・活用</div>
+          <div class="step-icon">📈</div>
+          <div class="step-title">出力</div>
         </div>
         <div class="step-points">
           <div class="step-point">Tableau</div>
@@ -122,113 +152,91 @@
           <div class="step-point">Google Drive</div>
         </div>
       </div>
-
-      <div class="flow-arrow"></div>
-
-      <div class="flow-step step-decision">
-        <div class="step-header">
-          <span class="step-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <!-- 上昇矢印とチェック -->
-              <polyline points="12 19 12 5 5 12" />
-              <polyline points="12 5 19 12" />
-              <path d="M19 8v8a2 2 0 0 1-2 2h-2l2-4" opacity="0.3" />
-              <!-- チェックマーク -->
-              <path d="M20 6l-8 8-3-3" opacity="0.5" />
-            </svg>
-          </span>
-          <div class="step-title">成果：意思決定・業務改善</div>
-        </div>
-        <div class="step-points">
-          <div class="step-point">見える化</div>
-          <div class="step-point">工数削減</div>
-          <div class="step-point">判断の高速化</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA Buttons -->
-    <div class="hero-visual-buttons">
-      <a href="#contact" class="btn btn-primary">相談する</a>
-      <a href="#service" class="btn btn-secondary">できることを見る</a>
     </div>
   </section>
 
-  <section id="company" class="section">
-    <h2>会社案内</h2>
-    <p>
-      MASARU DATA SOLUTIONSは、企業のデータ活用を支援するプロフェッショナル集団です。
-      企業の経営判断に必要なレポート・ダッシュボード・分析基盤を提供します。
-    </p>
-  </section>
-
-  <section id="service" class="section">
-    <h2>サービス</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>データ分析</h3>
-        <p>SQLやPythonを使い、売上・顧客・広告データを分析します。</p>
+  <!-- ===== 支援事例 ===== -->
+  <section class="section case-studies">
+    <h2>支援事例</h2>
+    <p class="section-subtitle">※NDAに配慮した匿名事例です</p>
+    <div class="cases-grid">
+      <div class="case-card">
+        <h3>レポート自動化</h3>
+        <p>月間レポート作成にかかる時間を80%削減。毎月20時間の業務改善に成功。</p>
+        <a href="./works/index.html" class="card-link">詳細を見る →</a>
       </div>
-
-      <div class="card">
-        <h3>BIダッシュボード作成</h3>
-        <p>TableauやLooker Studioを使い、見やすいレポートを作成します。</p>
+      <div class="case-card">
+        <h3>売上分析基盤構築</h3>
+        <p>複数のシステムから売上データを統合し、リアルタイムダッシュボードを構築。</p>
+        <a href="./works/index.html" class="card-link">詳細を見る →</a>
       </div>
-
-      <div class="card">
-        <h3>データ基盤支援</h3>
-        <p>BigQueryやSnowflakeを活用し、データ抽出・加工・集計を支援します。</p>
+      <div class="case-card">
+        <h3>BIダッシュボード導入</h3>
+        <p>経営層が必要なKPIをリアルタイムで可視化。意思決定スピードが向上。</p>
+        <a href="./works/index.html" class="card-link">詳細を見る →</a>
       </div>
     </div>
   </section>
 
-  <section id="results" class="section dark">
-    <h2>成果実績</h2>
-    <p>
-      導入後の改善効果やプロジェクトの成功事例をもとに、貴社の課題解決をサポートします。
-      売上改善・業務効率化・レポート整備など、実績に基づいた提案をします。
-    </p>
-  </section>
-
-  <section id="testimonials" class="section">
-    <h2>お客様の声</h2>
-    <div class="cards testimonials">
-      <div class="card">
-        <h3>製造業 A社</h3>
-        <p>「分析レポートで意思決定が早くなり、業務改善が進みました。」</p>
+  <!-- ===== 支援の流れ ===== -->
+  <section class="section support-flow">
+    <h2>支援の流れ</h2>
+    <div class="flow-steps-numbered">
+      <div class="numbered-step">
+        <div class="step-number">1</div>
+        <h3>お問い合わせ</h3>
+        <p>お悩みやご要望をお聞かせください。</p>
       </div>
-      <div class="card">
-        <h3>小売業 B社</h3>
-        <p>「ダッシュボード導入で売上の見える化が実現しました。」</p>
+      <div class="numbered-step">
+        <div class="step-number">2</div>
+        <h3>ヒアリング</h3>
+        <p>現状を詳しくお伺いし、課題を把握します。</p>
       </div>
-    </div>
-  </section>
-
-  <section id="blog" class="section dark">
-    <h2>ブログ</h2>
-    <div class="cards blog-cards">
-      <div class="card">
-        <h3>データ活用の基本</h3>
-        <p>データ分析をはじめる前に知っておきたいポイントをまとめました。</p>
+      <div class="numbered-step">
+        <div class="step-number">3</div>
+        <h3>ご提案</h3>
+        <p>最適なソリューションと実装計画をご提案します。</p>
       </div>
-      <div class="card">
-        <h3>BIツール導入のコツ</h3>
-        <p>ダッシュボード開発で失敗しないための設計と運用のヒント。</p>
+      <div class="numbered-step">
+        <div class="step-number">4</div>
+        <h3>開発・構築</h3>
+        <p>提案内容に基づいて実装を進めます。</p>
+      </div>
+      <div class="numbered-step">
+        <div class="step-number">5</div>
+        <h3>運用支援</h3>
+        <p>構築後の運用や改善をサポートします。</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2>お問合せ</h2>
-    <p>データ分析・BI作成・業務改善のご相談はこちらから。</p>
-    <a href="mailto:sample@example.com" class="btn">メールで相談する</a>
+  <!-- ===== プロフィール概要 ===== -->
+  <section class="section profile-overview">
+    <h2>プロフィール</h2>
+    <div class="profile-content">
+      <p>
+        データアナリスト・データエンジニア・データサイエンティストとして、
+        企業のデータ活用を総合的にサポートしています。
+        SQL・Python・BIツール・クラウドDWHなど、幅広い技術スタックで
+        ビジネス課題の解決を支援します。
+      </p>
+      <a href="./profile/index.html" class="btn primary">詳しく見る</a>
+    </div>
   </section>
+
+  <!-- ===== お問い合わせCTA ===== -->
+  <section class="section contact-cta">
+    <h2>データ活用のご相談は</h2>
+    <p>まずはお気軽にお問い合わせください。</p>
+    <a href="./contact/index.html" class="btn primary">お問い合わせ</a>
+  </section>
+
 
   <footer>
     <p>&copy; 2026 MASARU DATA SOLUTIONS</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 </html>

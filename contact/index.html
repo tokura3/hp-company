@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - MASARU DATA SOLUTIONS</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">MASARU DATA SOLUTIONS</div>
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="メニュー">☰</button>
+    <nav id="nav">
+      <a href="../index.html">HOME</a>
+      <a href="../services/index.html">SERVICES</a>
+      <a href="../works/index.html">WORKS</a>
+      <a href="../profile/index.html">PROFILE</a>
+      <a href="./index.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- ===== ページタイトル ===== -->
+  <section class="page-hero">
+    <h1>お問い合わせ</h1>
+    <p>データ活用についてのご質問・ご相談をお受けしています</p>
+  </section>
+
+  <!-- ===== お問い合わせ情報 ===== -->
+  <section class="section contact-info">
+    <h2>お問い合わせ方法</h2>
+    <div class="contact-methods">
+      <div class="contact-method">
+        <h3>📧 メールでのお問い合わせ</h3>
+        <p>以下のメールアドレスまでお気軽にご連絡ください。</p>
+        <p class="contact-detail">
+          <a href="mailto:info@datamasaru.com">info@datamasaru.com</a>
+        </p>
+        <p class="response-time">通常、1営業日以内にご返信させていただきます。</p>
+      </div>
+
+      <div class="contact-method">
+        <h3>📋 お問い合わせフォーム</h3>
+        <p>以下のフォームからお問い合わせいただくことも可能です。</p>
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">お名前 *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">会社名</label>
+              <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">電話番号</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="service">関心のあるサービス</label>
+              <select id="service" name="service">
+                <option value="">選択してください</option>
+                <option value="analytics">データ分析</option>
+                <option value="bi">BIダッシュボード構築</option>
+                <option value="platform">データ基盤構築</option>
+                <option value="automation">業務自動化</option>
+                <option value="ai">AI活用支援</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">お問い合わせ内容 *</label>
+              <textarea id="message" name="message" rows="8" required></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+              <label>
+                <input type="checkbox" name="privacy" required>
+                <span><a href="#privacy-policy">プライバシーポリシー</a>に同意する</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn primary">送信</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq">
+    <h2>よくあるご質問</h2>
+    <div class="faq-items">
+      <div class="faq-item">
+        <h3>Q. 初回相談は無料ですか？</h3>
+        <p>A. はい、初回のご相談は無料です。お気軽にお問い合わせください。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Q. どの業種に対応していますか？</h3>
+        <p>A. 製造業、小売業、卸売業、金融業、サービス業、IT業など、幅広い業種に対応しています。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Q. 小規模な企業でも対応してもらえますか？</h3>
+        <p>A. はい、規模に関わらず対応いたします。まずはお気軽にご相談ください。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Q. 既存システムとの連携はできますか？</h3>
+        <p>A. はい、既存システムとの連携も対応しています。詳細についてはお問い合わせ時にお聞きします。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Q. プロジェクト期間はどのくらいですか？</h3>
+        <p>A. 課題や要件により異なります。初回ご相談時に目安期間をご提示させていただきます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Q. 構築後のサポートはありますか？</h3>
+        <p>A. はい、構築後の運用・改善もサポートいたします。詳細についてはお問い合わせください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== プライバシーポリシー ===== -->
+  <section class="section" id="privacy-policy">
+    <h2>プライバシーポリシー</h2>
+    <div class="privacy-content">
+      <p>
+        当サイトで収集した個人情報は、お問い合わせへの返信や情報提供の目的のみに使用いたします。
+        お客様の許可なく第三者に提供することはございません。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MASARU DATA SOLUTIONS</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('お問い合わせいただきありがとうございます。\n\n※現在、メール機能は仮の状態です。\nお手数ですが、以下までお気軽にご連絡ください。\n\nemail: info@datamasaru.com');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
