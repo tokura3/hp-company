@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,141 +25,191 @@
   <!-- ===== ページタイトル ===== -->
   <section class="page-hero">
     <h1>支援事例</h1>
-    <p>実績に基づいた課題解決をサポートしています</p>
+    <p>業務委託・PoC・個人開発を含む、匿名化した支援内容です</p>
   </section>
 
   <!-- ===== 支援事例リスト ===== -->
   <section class="section works-list">
-    <h2>導入事例</h2>
-    <p class="section-subtitle">※NDAに配慮した匿名事例です</p>
+    <h2>支援事例</h2>
+    <p class="section-subtitle">NDAに配慮し、企業名・詳細データは匿名化しています</p>
 
     <div class="works-grid">
+
       <div class="work-card">
-        <h3>事例1：レポート自動化による業務効率化</h3>
+        <h3>事例1：レポート自動化支援</h3>
         <div class="work-info">
           <div class="work-detail">
-            <strong>業種：</strong>製造業
+            <strong>領域：</strong>業務自動化 / 帳票出力
           </div>
           <div class="work-detail">
-            <strong>課題：</strong>毎月の営業レポート作成に20時間の工数がかかっていた
+            <strong>課題：</strong>定型レポートの作成・確認・配布に手作業が多い
           </div>
         </div>
         <div class="work-description">
-          <h4>実施内容</h4>
-          <p>Excelの手作業レポートをGoogle Apps Scriptで自動化。毎日の売上データを自動集計し、営業ダッシュボードとして提供。</p>
+          <h4>対応内容</h4>
+          <p>
+            SQLによるデータ抽出、Pythonによる帳票生成、Google Driveへの保存処理を設計・実装。
+            手作業で行っていた集計・資料作成・配布業務の自動化を支援しました。
+          </p>
         </div>
         <div class="work-result">
-          <h4>成果</h4>
+          <h4>使用技術</h4>
           <ul>
-            <li>月間20時間の工数削減（80%削減）</li>
-            <li>レポート作成の属人化を解消</li>
-            <li>データの即時性が向上</li>
+            <li>SQL Server</li>
+            <li>Python</li>
+            <li>PDF出力</li>
+            <li>Google Drive</li>
           </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <h3>事例2：売上分析基盤の構築</h3>
+        <h3>事例2：売上分析基盤構築</h3>
         <div class="work-info">
           <div class="work-detail">
-            <strong>業種：</strong>小売業
+            <strong>領域：</strong>データ基盤 / 売上分析
           </div>
           <div class="work-detail">
-            <strong>課題：</strong>複数システムのデータを統合できず、経営判断が遅れていた
+            <strong>課題：</strong>売上データが複数システムに分散し、分析しづらい状態
           </div>
         </div>
         <div class="work-description">
-          <h4>実施内容</h4>
-          <p>基幹システム、POSシステム、Web分析ツールのデータをBigQueryに統合。リアルタイム売上ダッシュボードを構築。</p>
+          <h4>対応内容</h4>
+          <p>
+            複数システムのデータを取得・加工し、分析しやすい形に整備。
+            BIツールでの可視化を前提に、集計用テーブルやデータマートの設計を支援しました。
+          </p>
         </div>
         <div class="work-result">
-          <h4>成果</h4>
+          <h4>使用技術</h4>
           <ul>
-            <li>複数システムのデータを一元管理</li>
-            <li>リアルタイム経営管理が実現</li>
-            <li>意思決定スピードが3倍高速化</li>
+            <li>BigQuery</li>
+            <li>Snowflake</li>
+            <li>SQL</li>
+            <li>Tableau</li>
           </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <h3>事例3：BIダッシュボード導入</h3>
+        <h3>事例3：BIダッシュボード導入支援</h3>
         <div class="work-info">
           <div class="work-detail">
-            <strong>業種：</strong>サービス業
+            <strong>領域：</strong>BI / KPI可視化
           </div>
           <div class="work-detail">
-            <strong>課題：</strong>経営層が必要なKPIが可視化されていなかった
+            <strong>課題：</strong>Excel資料や個別集計に依存し、KPI確認に時間がかかる
           </div>
         </div>
         <div class="work-description">
-          <h4>実施内容</h4>
-          <p>経営層の意思決定に必要なKPIを整理し、Tableau でエグゼクティブダッシュボードを構築。</p>
+          <h4>対応内容</h4>
+          <p>
+            KPIの整理、データ接続、画面設計、ダッシュボード作成を支援。
+            関係者が同じ指標を確認できるよう、BI上での可視化設計を行いました。
+          </p>
         </div>
         <div class="work-result">
-          <h4>成果</h4>
+          <h4>使用技術</h4>
           <ul>
-            <li>KPI可視化により、経営判断が明確に</li>
-            <li>経営層の意思決定時間が短縮</li>
-            <li>ボトムアップでのデータ活用が促進</li>
+            <li>Tableau</li>
+            <li>Looker Studio</li>
+            <li>Amazon QuickSight</li>
+            <li>SQL</li>
           </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <h3>事例4：需要予測モデルの開発</h3>
+        <h3>事例4：SQLチューニング支援</h3>
         <div class="work-info">
           <div class="work-detail">
-            <strong>業種：</strong>卸売業
+            <strong>領域：</strong>SQL改善 / データ抽出
           </div>
           <div class="work-detail">
-            <strong>課題：</strong>需要予測が属人的で、在庫最適化ができていなかった
+            <strong>課題：</strong>大量データ抽出時に処理時間が長く、確認や再実行に時間がかかる
           </div>
         </div>
         <div class="work-description">
-          <h4>実施内容</h4>
-          <p>過去の売上データを活用し、Pythonで機械学習による需要予測モデルを開発。</p>
+          <h4>対応内容</h4>
+          <p>
+            抽出条件、JOIN条件、重複データ、ストアドプロシージャ連携部分を確認。
+            必要なデータを適切に取得できるよう、SQLロジックの見直しを支援しました。
+          </p>
         </div>
         <div class="work-result">
-          <h4>成果</h4>
+          <h4>使用技術</h4>
           <ul>
-            <li>需要予測精度が15%向上</li>
-            <li>在庫率を5%削減</li>
-            <li>予測の科学的根拠が確立</li>
+            <li>SQL Server</li>
+            <li>Stored Procedure</li>
+            <li>Query Tuning</li>
+            <li>データ抽出設計</li>
           </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <h3>事例5：データガバナンスの整備</h3>
+        <h3>事例5：生体データ・ストレス分析</h3>
         <div class="work-info">
           <div class="work-detail">
-            <strong>業種：</strong>金融業
+            <strong>領域：</strong>データ分析 / 可視化
           </div>
           <div class="work-detail">
-            <strong>課題：</strong>データの品質・管理に課題があり、監査対応が困難だった
+            <strong>課題：</strong>取得した生体データやストレス指標を、分析やレポートに活かしたい
           </div>
         </div>
         <div class="work-description">
-          <h4>実施内容</h4>
-          <p>データカタログの整備、マスタデータ管理、アクセス制御などのデータガバナンスを構築。</p>
+          <h4>対応内容</h4>
+          <p>
+            生体データの前処理、特徴量作成、相関分析、可視化、レポート作成を支援。
+            数値の変化や傾向を把握しやすい形に整理しました。
+          </p>
         </div>
         <div class="work-result">
-          <h4>成果</h4>
+          <h4>使用技術</h4>
           <ul>
-            <li>データ品質が向上</li>
-            <li>監査対応が円滑に</li>
-            <li>組織全体のデータ活用がしやすく</li>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>データ可視化</li>
           </ul>
         </div>
       </div>
+
+      <div class="work-card">
+        <h3>事例6：AI・機械学習PoC</h3>
+        <div class="work-info">
+          <div class="work-detail">
+            <strong>領域：</strong>AI活用 / 予測モデル
+          </div>
+          <div class="work-detail">
+            <strong>課題：</strong>需要予測や分類モデルを業務に活用できるか検証したい
+          </div>
+        </div>
+        <div class="work-description">
+          <h4>対応内容</h4>
+          <p>
+            売上データや行動データをもとに、予測・分類モデルのPoCを実施。
+            前処理、特徴量作成、モデル構築、評価、可視化までを一連で検証しました。
+          </p>
+        </div>
+        <div class="work-result">
+          <h4>使用技術</h4>
+          <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>LightGBM</li>
+            <li>機械学習</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ===== CTA ===== -->
   <section class="section contact-cta">
-    <h2>あなたのビジネスでも、データ活用をスタートしませんか？</h2>
-    <p>まずはお気軽にお問い合わせください。</p>
+    <h2>データ活用・業務改善のご相談は</h2>
+    <p>分析、BI構築、データ基盤、業務自動化、AI活用PoCなど、お気軽にご相談ください。</p>
     <a href="../contact/index.html" class="btn primary">お問い合わせ</a>
   </section>
 
@@ -170,3 +221,4 @@
 
 </body>
 </html>
+```
