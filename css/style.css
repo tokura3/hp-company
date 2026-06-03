@@ -1548,3 +1548,224 @@ footer {
     padding: 0;
   }
 }
+
+/* ===== Simple Clean Theme: freee-like ===== */
+
+body {
+  background: #f7fbff;
+  color: #1f2937;
+}
+
+/* ヒーロー・下層タイトル・CTA */
+.hero,
+.page-hero,
+.contact-cta {
+  background: #eef7ff;
+  color: #102a43;
+  border: 1px solid #dbeafe;
+}
+
+.hero p,
+.page-hero p,
+.contact-cta p {
+  color: #334155;
+}
+
+.sub-title {
+  color: #2563eb;
+}
+
+/* 見出し */
+.section h2,
+.hero h1,
+.page-hero h1 {
+  color: #102a43;
+}
+
+/* カード */
+.card,
+.issue-card,
+.service-card,
+.case-card,
+.work-card,
+.detail-card,
+.detail-item,
+.contact-method,
+.faq-item,
+.profile-content-full,
+.skill-category,
+.tech-category,
+.approach-item {
+  background: #ffffff;
+  border: 1px solid #e5eef9;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+/* カード見出し */
+.card h3,
+.issue-card h3,
+.service-card h3,
+.case-card h3,
+.work-card h3,
+.detail-card h3,
+.detail-item h3,
+.skill-category h3,
+.tech-category h3,
+.approach-item h3,
+.contact-method h3,
+.faq-item h3,
+.numbered-step h3 {
+  color: #0f4c81;
+}
+
+/* アクセント線 */
+.issue-card,
+.work-card,
+.service-card-large {
+  border-left-color: #38bdf8;
+}
+
+/* メインボタン */
+.btn.primary,
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  border: 2px solid #2563eb;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.22);
+}
+
+.btn.primary:hover,
+.btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.28);
+}
+
+/* セカンダリボタン */
+.btn.secondary,
+.btn-secondary {
+  background: #ffffff;
+  color: #2563eb;
+  border: 2px solid #bfdbfe;
+}
+
+.btn.secondary:hover,
+.btn-secondary:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+/* 遷移リンク・矢印を押しやすく */
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card-link::after {
+  content: "→";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.card-link:hover::after {
+  transform: translateX(3px);
+}
+
+/* 既存HTMLの「詳しく見る →」の矢印と二重になる場合は、
+   HTML側の「→」を消すのがおすすめ */
+
+/* ステップ番号 */
+.step-number {
+  background: #2563eb;
+}
+
+/* 小さな丸・チェック */
+.step-point::before,
+.service-features li::before {
+  background: #38bdf8;
+  color: #38bdf8;
+}
+
+/* フォーム */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* スマホでボタンを押しやすく */
+@media (max-width: 768px) {
+  .card-link {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .hero,
+  .page-hero {
+    background: #eef7ff;
+  }
+}
+/* ===== Service list marker fix ===== */
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.service-features li {
+  position: relative;
+  margin-left: 0;
+  padding: 8px 0 8px 24px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.service-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: auto;
+  height: auto;
+  background: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0;
+}
