@@ -1769,3 +1769,176 @@ body {
   font-weight: bold;
   border-radius: 0;
 }
+/* ===== Typography & Spacing Polish: Digital Agency style ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #334155;
+  background: #f8fafc;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #102a43;
+  letter-spacing: 0.02em;
+}
+
+.hero h1,
+.page-hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.section h2 {
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card h3,
+.issue-card h3,
+.service-card h3,
+.case-card h3,
+.work-card h3,
+.detail-card h3,
+.detail-item h3,
+.skill-category h3,
+.tech-category h3,
+.approach-item h3,
+.contact-method h3,
+.faq-item h3,
+.numbered-step h3 {
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.section {
+  padding: 88px 24px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 48px;
+}
+
+.card,
+.issue-card,
+.service-card,
+.case-card,
+.work-card,
+.detail-card,
+.detail-item,
+.contact-method,
+.faq-item,
+.profile-content-full,
+.skill-category,
+.tech-category,
+.approach-item {
+  padding: 32px;
+}
+
+.service-card p,
+.case-card p,
+.work-card p,
+.detail-card p,
+.detail-item p,
+.issue-card p,
+.contact-method p,
+.faq-item p {
+  line-height: 1.8;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary {
+  font-size: 16px;
+  font-weight: 700;
+  min-height: 46px;
+}
+
+/* Header readability */
+.logo {
+  color: #102a43;
+}
+
+nav a {
+  color: #334155;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Hero calm layout */
+.hero,
+.page-hero,
+.contact-cta {
+  background: #eef7ff;
+  color: #102a43;
+  border: 1px solid #dbeafe;
+}
+
+.hero p,
+.page-hero p,
+.contact-cta p {
+  color: #334155;
+}
+
+/* Card links: easier to tap/click */
+.card-link {
+  min-height: 46px;
+  padding: 11px 18px;
+}
+
+/* Service list marker fix: keep checkmark small */
+.service-features li::before {
+  background: none;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 64px 20px;
+  }
+
+  .hero {
+    padding: 56px 28px;
+  }
+
+  .card,
+  .issue-card,
+  .service-card,
+  .case-card,
+  .work-card,
+  .detail-card,
+  .detail-item,
+  .contact-method,
+  .faq-item,
+  .profile-content-full,
+  .skill-category,
+  .tech-category,
+  .approach-item {
+    padding: 24px;
+  }
+}
