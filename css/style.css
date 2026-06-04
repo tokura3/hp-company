@@ -1942,3 +1942,56 @@ nav a:hover {
     padding: 24px;
   }
 }
+/* ===== Data Flow Section Fix ===== */
+
+.flow-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+.flow-container .flow-step {
+  width: 100%;
+  max-width: none;
+  min-height: 300px;
+  padding: 32px 22px;
+  border-radius: 18px;
+}
+
+.flow-container .step-icon {
+  width: 58px;
+  height: 58px;
+  font-size: 30px;
+}
+
+.flow-container .step-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.flow-container .step-point {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.flow-arrow {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .flow-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-container .flow-step {
+    min-height: auto;
+  }
+}
