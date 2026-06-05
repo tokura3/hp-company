@@ -2188,3 +2188,54 @@ body {
     width: 100%;
   }
 }
+/* ===== Page Background Unification ===== */
+
+body {
+  background-color: #f5f3ee;
+  background-image:
+    radial-gradient(
+      rgba(15, 76, 129, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 32px 32px;
+}
+
+/* セクション背景を透明にして、body背景を見せる */
+.section,
+.issues,
+.works-list,
+.service-detail,
+.profile-detail,
+.tech-stack,
+.contact-info,
+.faq,
+.skills,
+.industries,
+.approach {
+  background: transparent;
+}
+
+/* 白い面はカードだけに限定 */
+.card,
+.issue-card,
+.service-card,
+.case-card,
+.work-card,
+.detail-card,
+.detail-item,
+.contact-method,
+.faq-item,
+.profile-content-full,
+.skill-category,
+.tech-category,
+.approach-item,
+.privacy-content {
+  background: #ffffff;
+}
+
+/* ページタイトルは全ページで統一 */
+.page-hero {
+  background: #eef7ff;
+  border: 1px solid #dbeafe;
+  color: #102a43;
+}
