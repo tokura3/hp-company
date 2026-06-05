@@ -1,10 +1,14 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お問い合わせ - MASARU DATA SOLUTIONS</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=3">
 </head>
 
 <body>
@@ -54,49 +58,6 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section class="section faq">
-    <h2>よくあるご質問</h2>
-    <p class="section-subtitle">お問い合わせ前に気になる点をまとめました</p>
-
-    <div class="faq-items">
-      <div class="faq-item">
-        <h3>Q. 初回相談は無料ですか？</h3>
-        <p>A. はい。初回のご相談は無料です。まずは現状やお困りごとをお聞かせください。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. まだ要件が固まっていなくても相談できますか？</h3>
-        <p>A. はい。要件整理の段階から対応可能です。現状の業務フローや利用データを確認しながら整理します。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 小規模な相談でも対応できますか？</h3>
-        <p>A. はい。SQLの見直し、Excel集計の整理、BIの一部改善など、小さな単位からご相談いただけます。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. どのようなデータに対応できますか？</h3>
-        <p>A. 売上データ、顧客データ、広告データ、GA4データ、業務データ、CSV・Excel・データベースのデータなどに対応可能です。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. どのツールに対応していますか？</h3>
-        <p>A. SQL、Python、Tableau、Looker Studio、BigQuery、Snowflake、SQL Server、Google Workspaceなどを中心に対応しています。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 費用はどのくらいですか？</h3>
-        <p>A. 内容や期間により異なります。初回相談後、作業範囲を整理したうえでお見積りします。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 構築後の運用支援もできますか？</h3>
-        <p>A. はい。構築後の改善、エラー対応、運用方法の整理、手順書作成などもご相談可能です。</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== お問い合わせ方法 ===== -->
   <section class="section contact-info">
     <h2>お問い合わせ方法</h2>
@@ -120,6 +81,26 @@
           <form id="contactForm" class="contact-form">
 
             <div class="form-group">
+              <label for="service">相談したい内容</label>
+              <select id="service" name="service">
+                <option value="">選択してください</option>
+                <option value="analytics">データ分析</option>
+                <option value="bi">BIダッシュボード構築</option>
+                <option value="platform">データ基盤構築</option>
+                <option value="automation">業務自動化</option>
+                <option value="sql">SQL改善・チューニング</option>
+                <option value="ai">AI・機械学習PoC</option>
+                <option value="not_sure">何を相談すればよいか分からない</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">お問い合わせ内容 *</label>
+              <textarea id="message" name="message" rows="8" required placeholder="例：現在Excelで月次レポートを作成しています。作業に時間がかかっているため、SQLやPythonで自動化できないか相談したいです。"></textarea>
+            </div>
+
+            <div class="form-group">
               <label for="name">お名前 *</label>
               <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
             </div>
@@ -139,25 +120,6 @@
               <input type="tel" id="phone" name="phone" placeholder="任意">
             </div>
 
-            <div class="form-group">
-              <label for="service">相談したい内容</label>
-              <select id="service" name="service">
-                <option value="">選択してください</option>
-                <option value="analytics">データ分析</option>
-                <option value="bi">BIダッシュボード構築</option>
-                <option value="platform">データ基盤構築</option>
-                <option value="automation">業務自動化</option>
-                <option value="sql">SQL改善・チューニング</option>
-                <option value="ai">AI・機械学習PoC</option>
-                <option value="other">その他・まだ決まっていない</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">お問い合わせ内容 *</label>
-              <textarea id="message" name="message" rows="8" required placeholder="例：現在Excelで月次レポートを作成しています。作業に時間がかかっているため、SQLやPythonで自動化できないか相談したいです。"></textarea>
-            </div>
-
             <div class="form-group checkbox">
               <label>
                 <input type="checkbox" name="privacy" required>
@@ -166,6 +128,7 @@
             </div>
 
             <button type="submit" class="btn primary">送信する</button>
+
           </form>
         </div>
       </div>
