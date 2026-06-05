@@ -1066,3 +1066,94 @@ footer {
     cursor: pointer;
   }
 }
+/* ===== Component Unification ===== */
+
+/* 背景は全ページ共通 */
+body {
+  background-color: #f5f3ee;
+  background-image:
+    radial-gradient(
+      rgba(15, 76, 129, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 32px 32px;
+}
+
+/* セクションは透明にして背景を統一 */
+.section,
+.issues,
+.works-list,
+.services-list,
+.service-detail,
+.profile-detail,
+.contact-info,
+.faq,
+.skills,
+.industries,
+.approach,
+.tech-stack {
+  background: transparent;
+}
+
+/* カードデザインを統一 */
+.card,
+.issue-card,
+.service-card,
+.service-card-large,
+.case-card,
+.work-card,
+.detail-card,
+.detail-item,
+.contact-method,
+.faq-item,
+.profile-content-full,
+.skill-category,
+.tech-category,
+.approach-item,
+.privacy-content {
+  background: #ffffff;
+  border: 1px solid #e5eef9;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+/* CTAを全ページ共通にする */
+.contact-cta,
+.cta-section {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 72px 32px;
+  text-align: center;
+  background: #eef7ff;
+  border: 1px solid #dbeafe;
+  border-radius: 28px;
+  color: #102a43;
+}
+
+.contact-cta h2,
+.cta-section h2 {
+  color: #102a43;
+  margin-bottom: 16px;
+}
+
+.contact-cta p,
+.cta-section p {
+  color: #334155;
+  margin-bottom: 28px;
+}
+
+/* CTA内ボタン */
+.contact-cta .btn,
+.cta-section .btn {
+  margin-top: 8px;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .contact-cta,
+  .cta-section {
+    margin: 32px 16px 0;
+    padding: 56px 24px;
+    border-radius: 24px;
+  }
+}
