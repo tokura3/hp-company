@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css?v=4">
+  <link rel="stylesheet" href="../css/style.css?v=8">
 </head>
 
 <body>
@@ -93,71 +93,78 @@
       </div>
     </div>
   </section>
+<!-- ===== お客様が得られる成果 ===== -->
+<section class="section business-flow">
+  <h2>データ活用で得られる成果</h2>
+  <p class="section-subtitle">
+    データを集めるだけでなく、業務改善につながる仕組みづくりを支援します
+  </p>
 
-  <!-- ===== データ活用フロー ===== -->
-  <section class="section data-flow">
-    <h2>データ活用の流れ</h2>
-    <p class="section-subtitle">分析・自動化・配布までの支援範囲</p>
+  <div class="flow-container">
 
-    <div class="flow-container">
-      <div class="flow-step step-source">
-        <div class="step-header">
-          <div class="step-icon">📊</div>
-          <div class="step-title">入力</div>
-        </div>
-        <div class="step-points">
-          <div class="step-point">Excel</div>
-          <div class="step-point">CSV</div>
-          <div class="step-point">基幹システム</div>
-          <div class="step-point">GA4</div>
-          <div class="step-point">広告データ</div>
-        </div>
+    <div class="flow-step">
+      <div class="step-header">
+        <div class="step-icon">📥</div>
+        <div class="step-title">データ収集</div>
       </div>
-
-      <div class="flow-arrow">→</div>
-
-      <div class="flow-step step-process">
-        <div class="step-header">
-          <div class="step-icon">⚙️</div>
-          <div class="step-title">処理</div>
-        </div>
-        <div class="step-points">
-          <div class="step-point">SQL</div>
-          <div class="step-point">Python</div>
-          <div class="step-point">GAS</div>
-        </div>
-      </div>
-
-      <div class="flow-arrow">→</div>
-
-      <div class="flow-step step-platform">
-        <div class="step-header">
-          <div class="step-icon">💾</div>
-          <div class="step-title">蓄積</div>
-        </div>
-        <div class="step-points">
-          <div class="step-point">BigQuery</div>
-          <div class="step-point">Snowflake</div>
-          <div class="step-point">SQL Server</div>
-        </div>
-      </div>
-
-      <div class="flow-arrow">→</div>
-
-      <div class="flow-step step-output">
-        <div class="step-header">
-          <div class="step-icon">📈</div>
-          <div class="step-title">出力</div>
-        </div>
-        <div class="step-points">
-          <div class="step-point">Tableau</div>
-          <div class="step-point">Looker Studio</div>
-          <div class="step-point">PDF</div>
-          <div class="step-point">Google Drive</div>
-        </div>
+      <div class="step-points">
+        <div class="step-point">Excel</div>
+        <div class="step-point">CSV</div>
+        <div class="step-point">基幹システム</div>
+        <div class="step-point">GA4</div>
       </div>
     </div>
-  </section>
+
+    <div class="flow-step">
+      <div class="step-header">
+        <div class="step-icon">🧹</div>
+        <div class="step-title">データ整理</div>
+      </div>
+      <div class="step-points">
+        <div class="step-point">重複整理</div>
+        <div class="step-point">集計ルール整備</div>
+        <div class="step-point">分析用データ作成</div>
+      </div>
+    </div>
+
+    <div class="flow-step">
+      <div class="step-header">
+        <div class="step-icon">📊</div>
+        <div class="step-title">見える化</div>
+      </div>
+      <div class="step-points">
+        <div class="step-point">KPI可視化</div>
+        <div class="step-point">BIダッシュボード</div>
+        <div class="step-point">自動レポート</div>
+      </div>
+    </div>
+
+    <div class="flow-step">
+      <div class="step-header">
+        <div class="step-icon">💡</div>
+        <div class="step-title">意思決定</div>
+      </div>
+      <div class="step-points">
+        <div class="step-point">課題発見</div>
+        <div class="step-point">施策判断</div>
+        <div class="step-point">改善ポイント把握</div>
+      </div>
+    </div>
+
+    <div class="flow-step">
+      <div class="step-header">
+        <div class="step-icon">🚀</div>
+        <div class="step-title">業務改善</div>
+      </div>
+      <div class="step-points">
+        <div class="step-point">作業時間削減</div>
+        <div class="step-point">属人化解消</div>
+        <div class="step-point">売上改善</div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- ===== 支援事例 ===== -->
   <section class="section case-studies">
@@ -339,49 +346,93 @@
   </div>
 </section>
 
+<!-- ===== FAQ ===== -->
+<!-- ===== FAQ ===== -->
+<section class="section faq">
+  <h2>よくあるご質問</h2>
+  <p class="section-subtitle">お問い合わせ前に気になる点をまとめました</p>
 
-  <!-- ===== FAQ ===== -->
-  <section class="section faq">
-    <h2>よくあるご質問</h2>
-    <p class="section-subtitle">お問い合わせ前に気になる点をまとめました</p>
+  <div class="faq-items">
 
-    <div class="faq-items">
-      <div class="faq-item">
-        <h3>Q. 初回相談は無料ですか？</h3>
-        <p>A. はい。初回のご相談は無料です。まずは現状やお困りごとをお聞かせください。</p>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>初回相談は無料ですか？</h3>
       </div>
-
-      <div class="faq-item">
-        <h3>Q. まだ要件が固まっていなくても相談できますか？</h3>
-        <p>A. はい。要件整理の段階から対応可能です。現状の業務フローや利用データを確認しながら整理します。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 小規模な相談でも対応できますか？</h3>
-        <p>A. はい。SQLの見直し、Excel集計の整理、BIの一部改善など、小さな単位からご相談いただけます。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. どのようなデータに対応できますか？</h3>
-        <p>A. 売上データ、顧客データ、広告データ、GA4データ、業務データ、CSV・Excel・データベースのデータなどに対応可能です。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. どのツールに対応していますか？</h3>
-        <p>A. SQL、Python、Tableau、Looker Studio、BigQuery、Snowflake、SQL Server、Google Workspaceなどを中心に対応しています。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 費用はどのくらいですか？</h3>
-        <p>A. 内容や期間により異なります。初回相談後、作業範囲を整理したうえでお見積りします。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Q. 構築後の運用支援もできますか？</h3>
-        <p>A. はい。構築後の改善、エラー対応、運用方法の整理、手順書作成などもご相談可能です。</p>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>はい。初回のご相談は無料です。まずは現状やお困りごとをお聞かせください。</p>
       </div>
     </div>
-  </section>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>まだ要件が固まっていなくても相談できますか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>はい。要件整理の段階から対応可能です。現状の業務フローや利用データを確認しながら整理します。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>小規模な相談でも対応できますか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>はい。SQLの見直し、Excel集計の整理、BIの一部改善など、小さな単位からご相談いただけます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>どのようなデータに対応できますか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>売上データ、顧客データ、広告データ、GA4データ、業務データ、CSV・Excel・データベースのデータなどに対応可能です。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>どのツールに対応していますか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>SQL、Python、Tableau、Looker Studio、BigQuery、Snowflake、SQL Server、Google Workspaceなどを中心に対応しています。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>費用はどのくらいですか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>内容や期間により異なります。初回相談後、作業範囲を整理したうえでお見積りします。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-icon q">Q</span>
+        <h3>構築後の運用支援もできますか？</h3>
+      </div>
+      <div class="faq-answer">
+        <span class="faq-icon a">A</span>
+        <p>はい。構築後の改善、エラー対応、運用方法の整理、手順書作成などもご相談可能です。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- ===== プロフィール概要 ===== -->
   <section class="section profile-overview">
