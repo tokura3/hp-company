@@ -1737,3 +1737,70 @@ nav a:focus-visible,
     font-size: 14px;
   }
 }
+
+/* =========================
+   ファーストビュー全体
+   画像をカードっぽく見せすぎず、PCでは横幅を広めにする
+========================= */
+.hero.hero-with-image {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 640px;
+  margin: 24px auto 64px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* =========================
+   ファーストビュー画像
+   枠いっぱいに画像を表示し、余白を出さない
+========================= */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  min-height: 640px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   スマホ表示
+   上の余白を詰め、カード感を弱める
+========================= */
+@media (max-width: 768px) {
+  .hero.hero-with-image {
+    width: calc(100% - 24px);
+    min-height: 72vh;
+    margin: 16px auto 40px;
+    border-radius: 18px;
+  }
+
+  .hero-image {
+    min-height: 72vh;
+  }
+}
+/* =========================
+   スマホ：ファーストビュー上の余白を詰める
+   ※同じような指定が上にあっても、最後に書くことで上書きする
+========================= */
+
+@media (max-width: 768px) {
+  .hero.hero-with-image {
+    min-height: 60vh;
+  }
+
+  .hero-image {
+    min-height: 60vh;
+  }
+}
+
+/* =========================
+   スマホ：bodyに入っている上余白を消す
+   固定ヘッダー分の余白が大きすぎるため調整
+========================= */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0 !important;
+  }
+}
