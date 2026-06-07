@@ -50,3 +50,21 @@ if (menuToggle && nav && header) {
   window.addEventListener('load', updateBodyPadding);
   window.addEventListener('resize', updateBodyPadding);
 }
+
+// ここから追加
+
+let lastScrollY = window.scrollY;
+
+if (header) {
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 80) {
+      header.classList.add("is-visible");
+    } else {
+      header.classList.remove("is-visible");
+    }
+
+    lastScrollY = currentScrollY;
+  });
+}

@@ -1279,8 +1279,12 @@ nav a:focus-visible,
 /* ===== Responsive: Mobile ===== */
 @media (max-width: 768px) {
   body {
-    padding-top: 76px;
+    padding-top: 0px;
     font-size: 16px;
+  }
+
+  .hero {
+    margin-top: 12px;
   }
 
   .header {
@@ -1589,3 +1593,16 @@ nav a:focus-visible,
     line-height: 1.8;
   }
 }
+/* ===== Mobile header hide/show on scroll ===== */
+
+@media (max-width: 768px) {
+  .header {
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -110%);
+  }
+
+  .header.is-visible {
+    transform: translate(-50%, 0);
+  }
+}
+
