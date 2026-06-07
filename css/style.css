@@ -463,8 +463,13 @@ nav a:hover {
 
 /* ===== Support Story Flow ===== */
 .support-flow h2 {
-  text-align: center;
+  margin-bottom: 12px;
 }
+
+.support-flow .section-subtitle {
+  margin-bottom: 40px;
+}
+
 
 .story-flow {
   max-width: 980px;
@@ -2216,4 +2221,206 @@ body {
     background: #f1f5f9;
     color: #0f172a;
   }
+}
+/* ===== Support Flow Color Refinement ===== */
+
+.story-number {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+.story-number span {
+  color: #64748b;
+}
+
+.story-number strong {
+  color: #334155;
+}
+
+.story-step {
+  border-color: #e2e8f0;
+}
+
+.story-points li {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+.story-points li::before {
+  color: #0f4c81;
+}
+/* ===== Support Flow Premium ===== */
+
+.story-step {
+  position: relative;
+  border: 1px solid #dbeafe;
+  background: #ffffff;
+}
+
+/* STEP番号 */
+.story-number {
+  width: 78px;
+  height: 78px;
+  background: #0f4c81;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 76, 129, 0.25);
+}
+
+.story-number span {
+  color: rgba(255,255,255,0.75);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.story-number strong {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+/* タイトル */
+.story-content h3 {
+  color: #0f2742;
+  font-weight: 700;
+}
+
+/* タグ */
+.story-points li {
+  background: #eef6ff;
+  border: 1px solid #dbeafe;
+  color: #0f4c81;
+  font-weight: 600;
+}
+
+.story-points li::before {
+  color: #2563eb;
+}
+/* ===== Support Flow Premium ===== */
+
+.story-step {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.story-number {
+  width: 78px;
+  height: 78px;
+  background: #0f4c81;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 76, 129, 0.25);
+}
+
+.story-number span {
+  color: rgba(255,255,255,0.75);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.story-number strong {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.story-content h3 {
+  color: #0f2742;
+  font-weight: 700;
+}
+
+.story-points li {
+  background: #eef6ff;
+  border: 1px solid #dbeafe;
+  color: #0f4c81;
+  font-weight: 600;
+}
+
+.story-points li::before {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .story-number {
+    width: 64px;
+    height: 64px;
+  }
+
+  .story-number strong {
+    font-size: 28px;
+  }
+}
+
+/* ===== Support Flow Alignment Fix ===== */
+
+.story-step {
+  align-items: center;
+}
+
+.story-number {
+  align-self: center;
+  margin-top: 0;
+}
+
+.story-content h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+/* ===== Support Flow Compact ===== */
+
+.story-step {
+  padding: 28px 36px;
+}
+
+.story-content p {
+  margin-bottom: 14px;
+}
+
+.story-points {
+  margin-top: 8px;
+}
+
+/* ===== Support Flow Strong Compact Fix ===== */
+
+.story-step {
+  padding: 24px 36px !important;
+  gap: 20px !important;
+  min-height: auto !important;
+}
+
+.story-content p {
+  margin-bottom: 10px !important;
+}
+
+.story-points {
+  grid-column: 2 !important;
+  margin-top: -6px !important;
+  gap: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .story-step {
+    padding: 24px 20px !important;
+  }
+
+  .story-points {
+    grid-column: 1 !important;
+    margin-top: 4px !important;
+  }
+}
+/* ===== Support Flow Final Fine Tune ===== */
+
+.story-step {
+  padding: 22px 34px !important;
+}
+
+.story-flow {
+  gap: 20px !important;
+}
+
+.story-content p {
+  margin-bottom: 8px !important;
 }
