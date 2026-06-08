@@ -1656,3 +1656,23 @@ nav a:focus-visible,
   top: 0;
   z-index: 1000;
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.45;
+  }
+}
+
+
+/* PCでは改行しない */
+.sp-br {
+  display: none;
+}
+
+/* スマホだけ改行する */
+@media (max-width: 768px) {
+  .sp-br {
+    display: inline;
+  }
+}
