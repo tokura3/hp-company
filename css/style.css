@@ -1718,3 +1718,297 @@ nav a:focus-visible,
     gap: 8px;
   }
 }
+@media (max-width: 768px) {
+  .hero-image {
+    height: 500px;
+    object-fit: cover;
+    object-position: 58% center;
+  }
+
+  .hero-content {
+    top: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .hero::before {
+    background: rgba(0, 31, 63, 0.45);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero.hero-with-image {
+    background-position: 58% center;
+  }
+}
+@media (max-width: 768px) {
+  .hero.hero-with-image {
+    min-height: 620px;
+    background-image: url("../images/hero-consulting_SP.png?v=1");
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero.hero-with-image::before {
+    background: rgba(8, 30, 55, 0.18);
+  }
+
+  .hero.hero-with-image .hero-content {
+    display: none;
+  }
+}
+/* ===== Problem Cards with Icons ===== */
+.issues-grid-icon {
+  gap: 24px;
+}
+
+.issue-card-with-icon {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.problem-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef7ff;
+  flex-shrink: 0;
+}
+
+.problem-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* 表計算っぽいアイコン */
+.spreadsheet-icon {
+  background: #e8f7ee;
+}
+
+.spreadsheet-icon span {
+  width: 42px;
+  height: 46px;
+  border-radius: 7px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* 時計 */
+.time-icon {
+  background: #e8f7ee;
+}
+
+.time-icon span {
+  color: #16a34a;
+  font-size: 34px;
+}
+
+/* DB */
+.database-icon {
+  background: #fff7df;
+}
+
+.database-icon span {
+  width: 44px;
+  height: 36px;
+  border-radius: 50% / 18%;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* グラフ */
+.chart-icon {
+  background: #eaf3ff;
+}
+
+.chart-icon span {
+  color: #2563eb;
+  font-size: 38px;
+}
+
+@media (max-width: 768px) {
+  .issue-card-with-icon {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .problem-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .spreadsheet-icon span {
+    width: 38px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .time-icon span,
+  .chart-icon span {
+    font-size: 30px;
+  }
+}
+.problem-icon span {
+  font-size: 0 !important;
+}
+
+/* 表 */
+.spreadsheet-icon span {
+  width: 34px;
+  height: 40px;
+  border-radius: 6px;
+  background:
+    linear-gradient(#fff 0 0) 9px 10px / 16px 2px no-repeat,
+    linear-gradient(#fff 0 0) 9px 19px / 16px 2px no-repeat,
+    linear-gradient(#fff 0 0) 9px 28px / 16px 2px no-repeat,
+    #16a34a;
+}
+
+/* 時計 */
+.time-icon span {
+  width: 38px;
+  height: 38px;
+  border: 4px solid #16a34a;
+  border-radius: 50%;
+  position: relative;
+}
+.time-icon span::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #16a34a;
+  top: 7px;
+  left: 15px;
+}
+.time-icon span::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 3px;
+  background: #16a34a;
+  top: 18px;
+  left: 15px;
+}
+
+/* DB */
+.database-icon span {
+  width: 40px;
+  height: 34px;
+  border-radius: 50% / 18%;
+  background: #f59e0b;
+  position: relative;
+}
+.database-icon span::before,
+.database-icon span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fbbf24;
+}
+.database-icon span::before {
+  top: -1px;
+}
+.database-icon span::after {
+  bottom: -1px;
+}
+
+/* グラフ */
+.chart-icon span {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.chart-icon span::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  width: 7px;
+  height: 16px;
+  background: #2563eb;
+  box-shadow:
+    12px -6px 0 #2563eb,
+    24px -14px 0 #2563eb;
+}
+.chart-icon span::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-top: 4px solid #2563eb;
+  border-right: 4px solid #2563eb;
+  transform: rotate(45deg);
+}
+/* ===== Problem Cards final adjustment ===== */
+.issue-card-with-icon {
+  grid-template-columns: 72px 1fr !important;
+  gap: 28px !important;
+  align-items: center !important;
+}
+
+.issue-card-with-icon h3 {
+  margin-bottom: 10px !important;
+  font-size: 24px !important;
+}
+
+.issue-card-with-icon p {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+.problem-icon {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+@media (max-width: 768px) {
+  .issue-card-with-icon {
+    grid-template-columns: 64px 1fr !important;
+    gap: 16px !important;
+    align-items: center !important;
+  }
+
+  .issue-card-with-icon h3 {
+    font-size: 18px !important;
+  }
+
+  .issue-card-with-icon p {
+    font-size: 14px !important;
+  }
+}
+/* グラフアイコンを修正 */
+/* ===== グラフアイコン ===== */
+
+.chart-icon span {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  display: block;
+}
+
+.chart-icon span::before,
+.chart-icon span::after {
+  content: none !important;
+}
+
+.chart-icon span {
+  background:
+    linear-gradient(#2563eb,#2563eb) left bottom / 7px 14px no-repeat,
+    linear-gradient(#2563eb,#2563eb) center bottom / 7px 24px no-repeat,
+    linear-gradient(#2563eb,#2563eb) right bottom / 7px 32px no-repeat;
+}
