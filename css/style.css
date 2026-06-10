@@ -2144,3 +2144,13 @@ nav a:focus-visible,
   border-top: 4px solid #16a34a;
   border-right: 4px solid #16a34a;
 }
+.story-number {
+  background: #2563eb !important;
+}
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
