@@ -453,6 +453,7 @@ approach-item,
   font-size: 13px;
   font-weight: 800;
   line-height: 1.2;
+  transition: all 0.22s ease;
 }
 
 .card-link::after {
@@ -467,6 +468,32 @@ approach-item,
   color: #ffffff;
   font-size: 13px;
   transition: transform 0.2s ease;
+}
+
+.case-card:hover .card-link {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.24);
+  transform: translateY(-1px);
+}
+
+.case-card:hover .card-link::after {
+  background: #ffffff;
+  color: var(--color-primary);
+  transform: translateX(3px);
+}
+
+.service-card:hover .card-link {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.24);
+  transform: translateY(-1px);
+}
+
+.service-card:hover .card-link::after {
+  background: #ffffff;
+  color: var(--color-primary);
+  transform: translateX(3px);
 }
 
 .card-link:hover {
